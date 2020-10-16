@@ -11,7 +11,7 @@ createMessage = async () => {
   messageList.push(message);
 }
 const interval = setInterval(() => {
-  if (messageList.length >= 10) clearInterval(interval);
+  if (messageList.length >= 300) clearInterval(interval);
   createMessage();
 }, 3000);
 const app = new Koa();
